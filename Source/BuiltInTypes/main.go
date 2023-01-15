@@ -5,6 +5,7 @@ import (
 	"BuiltInTypes/Complex"
 	"BuiltInTypes/Floatingtypes"
 	"BuiltInTypes/Integertypes"
+	"BuiltInTypes/Stringsandrunes"
 
 	"fmt"
 )
@@ -25,6 +26,9 @@ func main() {
 
 	Complex.DeclarationDemo("Complex Data variables declarations")
 	Complex.ComposeDecomposeDemo("Compose and Decompose Complex numbers")
+
+	Stringsandrunes.DeclarationDemo("Strings and Runes declarations")
+	Stringsandrunes.StdOperationsDemo("Operation on strings and runes")
 
 	fmt.Println("----- Builtin Types End -----")
 
