@@ -2,6 +2,7 @@ package main
 
 import (
 	"BuiltInTypes/Boolean"
+	"BuiltInTypes/Complex"
 	"BuiltInTypes/Floatingtypes"
 	"BuiltInTypes/Integertypes"
 
@@ -21,6 +22,9 @@ func main() {
 
 	Floatingtypes.DeclarationDemo("Declaring floating point/decimals")
 	Floatingtypes.StdOperationsDemo("Arithmetic operations on floating point variables")
+
+	Complex.DeclarationDemo("Complex Data variables declarations")
+	Complex.ComposeDecomposeDemo("Compose and Decompose Complex numbers")
 
 	fmt.Println("----- Builtin Types End -----")
 
