@@ -13,6 +13,10 @@ func BoolDeclarationDemo(title string) {
 	fmt.Printf("\tt= %v, %[1]T\n", t)
 	fmt.Printf("\tf= %v, %[1]T\n", f)
 
+	weekDay := 4
+	isSunday := weekDay == 7
+	fmt.Printf("\tweekDay: %v, isSunday: %v (%[2]T)\n", weekDay, isSunday)
+
 	fmt.Printf("*** %v : END ***\n", title)
 	fmt.Printf("\n")
 }
