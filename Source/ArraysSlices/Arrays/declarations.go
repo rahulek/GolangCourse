@@ -18,7 +18,7 @@ func DeclarationsDemo(title string) {
 	fmt.Printf("*** %v: START ***\n", title)
 
 	//Declare as an explicit type
-	var taxRates [3]int = [3]int{10, 20, 30}
+	var taxRates = [3]int{10, 20, 30}
 	fmt.Printf("\ttaxRates: %v (%[1]T)\n", taxRates)
 
 	//Shorthand.
@@ -37,6 +37,15 @@ func DeclarationsDemo(title string) {
 	taxRates[1] *= 2
 	taxRates[2] *= 2
 	fmt.Printf("\tDouble taxRates: %v\n", taxRates)
+
+	//Declare only an array but not the data
+	var grades [5]int
+	grades[0] = 100
+	grades[1] = 87
+	grades[2] = 67
+	grades[3] = 92
+	grades[4] = 81
+	fmt.Printf("\tDeclare and init later: grades: %v\n", grades)
 
 	fmt.Printf("*** %v: END ***\n", title)
 	fmt.Printf("\n")
